@@ -1,0 +1,189 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'gothamBlack';
+  src: url(../../fonts/gotham/GothamBlack.otf);
+}
+
+@font-face {
+  font-family: 'gothamBook';
+  src: url(../../fonts/gotham/GothamBook.otf);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 540px;
+  margin: auto;
+}
+
+.button {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00ff33), color-stop(#33ff66), to(#66cc66));
+  background: linear-gradient(to top, #00ff33, #33ff66, #66cc66);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  font-family: "gothamBlack", sans-serif;
+  border-radius: 0.75rem;
+  -webkit-animation: button 3s ease infinite;
+          animation: button 3s ease infinite;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.button::before {
+  content: 'Quero alavancar minhas vendas!';
+}
+
+@-webkit-keyframes button {
+  0%, 100% {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  50% {
+    -webkit-transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+            transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+  }
+}
+
+@keyframes button {
+  0%, 100% {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+            transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  50% {
+    -webkit-transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+            transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+  }
+}
+
+.text {
+  font-size: 1.2rem;
+}
+
+.black, .book {
+  text-align: center;
+}
+
+.black strong, .book strong {
+  color: #e42dfe;
+}
+
+.black {
+  font-family: "gothamBlack", sans-serif;
+}
+
+.book {
+  font-family: "gothamBook", sans-serif;
+}
+
+.seta {
+  position: absolute;
+  width: 100vw;
+}
+
+.seta img {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+.title img {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+header {
+  background-image: url(../../img/background/bg1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .img-header {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+header .img-header img {
+  width: 100%;
+}
+
+main {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .card {
+  width: 83%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .depoiment {
+  background: #e42dfe;
+  width: 85%;
+  margin: auto;
+  height: 230px;
+  margin-bottom: 1rem;
+}
+
+main .container-left {
+  width: 40%;
+  padding-top: 1.5rem;
+}
+
+main .container-left img {
+  width: 142%;
+}
+
+main .container-rigth {
+  width: 60%;
+}
+
+main .container-rigth .title {
+  width: 16rem;
+}
+
+main .container-rigth .title img {
+  width: 100%;
+}
+
+main .container-rigth .text.book {
+  text-align: left;
+}
+
+footer {
+  background: #fff;
+}
+
+footer p.text {
+  color: #000;
+  font-size: 0.75rem;
+  padding: 0.25rem 0;
+}
+/*# sourceMappingURL=page.css.map */

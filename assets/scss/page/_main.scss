@@ -1,0 +1,49 @@
+main {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .card {
+        width: 83%;
+        margin: auto;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .depoiment {
+        background: $color-tercery;
+        width: 85%;
+        margin: auto;
+        height: 230px;
+        margin-bottom: 1rem;
+    }
+
+    .container-left {
+        width: 40%;
+        padding-top: 1.5rem;
+
+        img {
+            width: 142%;
+        }
+    }
+
+    .container-rigth {
+        width: 60%;
+
+        .title {
+            width: 16rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .text.book {
+            text-align: left;
+        }
+    }
+}

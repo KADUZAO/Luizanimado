@@ -1,0 +1,15 @@
+header {
+    background-image: url(../../img/background/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .img-header {
+        margin-top: 3rem;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}

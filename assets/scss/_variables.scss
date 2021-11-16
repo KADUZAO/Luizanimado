@@ -1,0 +1,88 @@
+//PALET START
+    $color-primary: #9933ff;
+    $color-secondary: #6633ff;
+    $color-tercery: #e42dfe;
+//PALET END
+
+//FONTS START
+    @import 'fonts';
+
+    $font-gothaBlack: 'gothamBlack', sans-serif;
+    $font-gothaBook: 'gothamBook', sans-serif;
+//FONTS END
+
+//COMPONENTS START
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 540px;
+        margin: auto;
+    }
+
+    .button {
+        background: linear-gradient(to top, #00ff33, #33ff66, #66cc66);
+        width: fit-content;
+        margin: auto;
+        padding: 0.5rem 1rem;
+        font-family: $font-gothaBlack;
+        border-radius: 0.75rem;
+        animation: button 3s ease infinite;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.15rem;
+
+        &::before {
+            content: 'Quero alavancar minhas vendas!';
+        }
+    }
+
+    @keyframes button {
+        0%, 100% {
+            transform: matrix(1,0,0,1,0,0);
+        }
+
+        50% {
+            transform: matrix(1.1,0,0,1.1,0,0);
+        }
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .black, .book {
+        text-align: center;
+
+        strong {
+            color: $color-tercery;
+        }
+    }
+
+    .black {
+        font-family: $font-gothaBlack;
+    }
+
+    .book {
+        font-family: $font-gothaBook;
+    }
+
+    .seta {
+        position: absolute;
+        width: 100vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .title {
+        width: 100%;
+
+        img {
+            width: 100%;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+//COMPONENTS END
